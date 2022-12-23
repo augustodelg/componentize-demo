@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react"
 
 interface Props {
     color: string,
-    center: boolean
+    center?: boolean
 }
 
 const Chip = (props: PropsWithChildren<Props>) => {
