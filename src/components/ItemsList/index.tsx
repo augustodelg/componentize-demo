@@ -14,9 +14,9 @@ const ItemList = (props: PropsWithChildren<Props>) => {
 
     return (
         <Fragment>
-            <Typography size={THEME.fonts.size.subtitle} color={THEME.colors.text.normal} weight='font-extrabold' >
+            <Typography.Subtitle>
                 {cantProducts} Items
-            </Typography>
+            </Typography.Subtitle>
             <div className="h-96 overflow-auto no-scrollbar rounded-3xl">
                 {props.items.map((item) =>
                     <ItemInCart item={item} key={item.id} />

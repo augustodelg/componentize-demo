@@ -14,12 +14,12 @@ const InformationSection = (props: Props) => {
         <div className="grid grid-cols-2 ">
             <Image src={props.image} center={true} size="w-2/6" />
             <div className="grid grid-row-2 my-5">
-                <Typography size={THEME.fonts.size.body} color={THEME.colors.text.normal} weight='font-bold' >
+                <Typography.Subtitle2>
                     {props.name}
-                </Typography>
-                <Typography size={THEME.fonts.size.small} color={THEME.colors.textLight.normal} weight='font-regular' >
+                </Typography.Subtitle2>
+                <Typography.Description color={THEME.colors.grayMedium.text} >
                     {props.description}
-                </Typography>
+                </Typography.Description>
             </div>
         </div>
 
