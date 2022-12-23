@@ -10,31 +10,85 @@ const THEME = {
             bg: 'bg-gray-800',
             text: 'text-gray-800'
         },
-        gray: {
+        grayLigth: {
             normal: 'gray-100',
             bg: 'bg-gray-100',
             text: 'text-gray-100'
+        },
+        grayMedium: {
+            normal: 'gray-400',
+            bg: 'bg-gray-400',
+            text: 'text-gray-400'
+        },
+        grayDeep: {
+            normal: 'gray-800',
+            bg: 'bg-gray-800',
+            text: 'text-gray-800'
         },
         white: {
             normal: 'white',
             bg: 'bg-white',
             text: 'text-white'
         },
-        text: {
-            normal: 'text-gray-800',
-        },
-        textLight: {
-            normal: 'text-gray-400',
-        },
     },
     fonts: {
         size: {
             title: 'text-4xl',
             subtitle: 'text-2xl',
-            body: 'text-xl',
+            subtitle2: 'text-xl',
+            body: 'text-base',
             small: 'text-sm',
         },
+
     },
+    components: {
+        button: {
+            size: {
+                large: 'px-8 py-6',
+                medium: 'px-6 py-3',
+                small: 'px-4 py-2',
+                auto: 'px-auto py-auto',
+            },
+            rounded: {
+                large: 'rounded-3xl',
+                medium: 'rounded-xl',
+                small: 'rounded-lg',
+                full: 'rounded-full',
+            }
+        },
+    }
 };
+
+
+// type ThemeColor = {
+//     normal: string;
+//     bg: string;
+//     text: string;
+// }
+// type ThemeColors = {
+//     [key: string]: ThemeColor
+// }
+
+
+// type ThemeFonts = {
+//     [key: string]: {
+//         [key: string]: string;
+//     }
+// }
+
+// type ThemeComponents = {
+//     [key: string]: {
+//         [key: string]: {
+//             [key: string]: string;
+//         }
+//     }
+// }
+
+// interface ITheme {
+//     colors: ThemeColors
+//     fonts: ThemeFonts
+//     components: ThemeComponents
+// }
+
 
 export default THEME;
