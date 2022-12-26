@@ -12,7 +12,7 @@ export interface ITypography {
     weight?: string,
     className?: string
 }
-
+// A more elavorate logic should be implemented in order to respect the html semantics.
 const Typography = (props: PropsWithChildren<ITypography>) => {
 
     const weight = props.weight ? props.weight : 'font-bold'
