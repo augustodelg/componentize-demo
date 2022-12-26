@@ -2,6 +2,7 @@ import THEME from "../../config/theme"
 import { Bill } from "../../entity/billi.type"
 import Card from "../generals/Card"
 import Typography from "../generals/Typography"
+import { BilliDetails } from "./components/BilliDetails"
 import BilliItem from "./components/BilliItem"
 
 interface Props {
@@ -11,15 +12,11 @@ interface Props {
 const BillSection = (props: Props) => {
   return (
     <Card color={THEME.colors.white.bg} >
-      <div className="py-5 px-8">
-        {props.bill.items.map((itemBill) => {
-          return (
-            <BilliItem amount={itemBill.amount} subject={itemBill.subject} key={itemBill.subject} />
-          )
-        }
-        )}
-        <div className='mt-4'>
-          <BilliItem amount={props.bill.total} subject="Total" important={true} />
+      <div className="py-5 px-8 ">
+        <BilliDetails details={props.bill.items} />
+        <div className='mt-4 divide-y'>
+          <div className={`${THEME.colors.grayMedium.normal}`} />
+          <BilliItem amount={props.bill.total} subject="Total" highlight={true} />
         </div>
 
       </div>
