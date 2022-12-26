@@ -2,7 +2,7 @@ import { BillItem } from "../../../entity/billi.type"
 import Typography from "../../generals/Typography"
 
 interface Props extends BillItem {
-    important?: boolean
+    highlight?: boolean
 }
 
 const BilliItem = (props : Props) => {
@@ -11,7 +11,7 @@ const BilliItem = (props : Props) => {
             <Typography.Normal bold={true}>
                 {props.subject}
             </Typography.Normal>
-            <Typography.Normal bold={props.important}>
+            <Typography.Normal bold={props.highlight}>
                 ${props.amount}
             </Typography.Normal>
         </div>
