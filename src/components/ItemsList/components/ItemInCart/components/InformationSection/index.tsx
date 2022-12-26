@@ -1,8 +1,8 @@
-import { Fragment, PropsWithChildren } from "react"
 import THEME from "../../../../../../config/theme"
 import { ProductInCart } from "../../../../../../entity/product.types"
 import Image from "../../../../../generals/Image"
 import Typography from "../../../../../generals/Typography"
+import TextInformation from "./components/TextInformation"
 
 interface Props extends Pick<ProductInCart, "name" | "description" | "image"> {
 }
@@ -11,15 +11,12 @@ interface Props extends Pick<ProductInCart, "name" | "description" | "image"> {
 const InformationSection = (props: Props) => {
 
     return (
-        <div className="grid grid-cols-2 ">
-            <Image src={props.image} center={true} size="w-2/6" />
-            <div className="grid grid-row-2 my-5">
-                <Typography.Subtitle2>
-                    {props.name}
-                </Typography.Subtitle2>
-                <Typography.Description color={THEME.colors.grayMedium.text} >
-                    {props.description}
-                </Typography.Description>
+        <div className="grid lg:grid-cols-3 grid-cols-3 ">
+            <div className="col-span-1 mx-auto my-auto">
+                <Image src={props.image} center={true} size="w-3/6" />
+            </div>
+            <div className="col-span-2">
+            <TextInformation description={props.description} name={props.name} />
             </div>
         </div>
 
