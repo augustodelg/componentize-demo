@@ -60,35 +60,4 @@ const THEME = {
 };
 
 
-// type ThemeColor = {
-//     normal: string;
-//     bg: string;
-//     text: string;
-// }
-// type ThemeColors = {
-//     [key: string]: ThemeColor
-// }
-
-
-// type ThemeFonts = {
-//     [key: string]: {
-//         [key: string]: string;
-//     }
-// }
-
-// type ThemeComponents = {
-//     [key: string]: {
-//         [key: string]: {
-//             [key: string]: string;
-//         }
-//     }
-// }
-
-// interface ITheme {
-//     colors: ThemeColors
-//     fonts: ThemeFonts
-//     components: ThemeComponents
-// }
-
-
 export default THEME;
