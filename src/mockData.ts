@@ -13,12 +13,13 @@ export const mockData: ProductInCart[] = [
     },
     {
         id: '2',
-        name: 'Tita',
+        name: 'Snappler',
         description: 'Pan de papa, 2 Carnes. 4 Cheddars',
         price: 1020,
         image: burguer,
         quantity: 1,
     },
+
 ];
 
 
