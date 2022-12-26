@@ -23,7 +23,7 @@ function App() {
         <div className="mb-6 mt-8 ">
           <BillSection bill={billMockData} />
         </div>
-        <Button.Large className='w-full ' color={THEME.colors.grayDeep.bg} >
+        <Button.Large onClick={() => alert('Snappler 🕺')} className='w-full ' color={THEME.colors.grayDeep.bg} >
           <Typography.Title color={THEME.colors.white.text} >
             PAY
           </Typography.Title>
