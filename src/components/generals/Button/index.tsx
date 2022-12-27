@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import THEME from "../../../config/theme";
 import Large from "./variants/Large";
+import LargeWithIcon from "./variants/LargeWithIcon";
 import Round from "./variants/Round";
 
 
@@ -26,5 +27,6 @@ const Button = (props: PropsWithChildren<IButton>) => {
 
 Button.Large = Large
 Button.Round = Round
+Button.LargeWithIcon = LargeWithIcon
 
 export default Button;
