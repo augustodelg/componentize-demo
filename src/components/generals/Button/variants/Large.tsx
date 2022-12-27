@@ -8,10 +8,10 @@ interface Props extends Pick<IButton, 'className' | 'color' | 'onClick'> {
 const Large = (props: PropsWithChildren<Props>) => {
     return (
         <Button
-            size={THEME.components.button.size.large}
             color={props.color}
-            className={props.className}
-            rounded={THEME.components.button.rounded.large}
+            className={`${props.className}
+            ${THEME.components.button.size.large}
+            ${THEME.components.button.rounded.large}`}
             onClick={props.onClick}
         >
             {props.children}

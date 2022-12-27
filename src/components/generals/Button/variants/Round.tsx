@@ -8,13 +8,13 @@ interface Props extends Pick<IButton, 'className' | 'color' | 'onClick'> {
 const Round = (props: PropsWithChildren<Props>) => {
     return (
         <Button
-            size={THEME.components.button.size.auto}
             color={props.color}
-            className={props.className}
-            rounded={THEME.components.button.rounded.full}
+            className={`${props.className}
+            ${THEME.components.button.size.auto} 
+            ${THEME.components.button.rounded.full}`}
             onClick={props.onClick}
         >
-            {props.children}
+                {props.children}
         </Button>
     )
 }
