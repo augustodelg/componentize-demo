@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react"
+import { PropsWithChildren, useEffect } from "react"
 import THEME from "../../../config/theme"
 import Description from "./variants/Description"
 import Normal from "./variants/Normal"

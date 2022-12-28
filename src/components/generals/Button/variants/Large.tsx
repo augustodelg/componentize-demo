@@ -2,10 +2,8 @@ import { PropsWithChildren } from "react"
 import Button, { IButton } from ".."
 import THEME from "../../../../config/theme"
 
-interface Props extends Pick<IButton, 'className' | 'color' | 'onClick'> {
-}
 
-const Large = (props: PropsWithChildren<Props>) => {
+const Large = (props: PropsWithChildren<IButton>) => {
     return (
         <Button
             color={props.color}

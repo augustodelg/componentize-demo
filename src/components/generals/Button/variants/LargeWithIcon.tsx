@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactElement } from "react"
 import Button, { IButton } from ".."
 
-interface Props extends Pick<IButton, 'className' | 'color' | 'onClick'> {
+interface Props extends IButton{
     icon: ReactElement;
 }
 
